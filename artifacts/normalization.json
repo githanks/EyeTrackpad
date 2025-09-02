@@ -1,0 +1,28 @@
+{
+  "img_mode": "grayscale",
+  "target_size": [
+    64,
+    64
+  ],
+  "use_mean_std_norm": false,
+  "mean": 0.0,
+  "std": 1.0,
+  "augment_photometric": {
+    "brightness_delta": 0.08,
+    "contrast_range": [
+      0.9,
+      1.1
+    ],
+    "gauss_noise_std": 0.01,
+    "blur_ksize": 0
+  },
+  "augment_geometric": {
+    "hflip_prob": 0.5,
+    "translate_px": 0,
+    "scale_range": [
+      1.0,
+      1.0
+    ],
+    "rotate_deg": 0.0
+  }
+}

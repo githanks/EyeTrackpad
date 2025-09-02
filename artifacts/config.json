@@ -1,0 +1,77 @@
+{
+  "project": "EyeTrackpad",
+  "created_at": "2025-09-02T22:27:15",
+  "device": "cpu",
+  "dataset_root": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad",
+  "preproc_root": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\outputs\\preprocessed",
+  "splits": {
+    "train": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\splits\\train.csv",
+    "val": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\splits\\val.csv",
+    "test": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\splits\\test.csv"
+  },
+  "normalization": {
+    "img_mode": "grayscale",
+    "target_size": [
+      64,
+      64
+    ],
+    "use_mean_std_norm": false,
+    "mean": 0.0,
+    "std": 1.0,
+    "augment_photometric": {
+      "brightness_delta": 0.08,
+      "contrast_range": [
+        0.9,
+        1.1
+      ],
+      "gauss_noise_std": 0.01,
+      "blur_ksize": 0
+    },
+    "augment_geometric": {
+      "hflip_prob": 0.5,
+      "translate_px": 0,
+      "scale_range": [
+        1.0,
+        1.0
+      ],
+      "rotate_deg": 0.0
+    }
+  },
+  "loader": {
+    "batch_size_train": 8,
+    "batch_size_eval": 16,
+    "num_workers": 0,
+    "pin_memory": false,
+    "persistent_workers": false,
+    "prefetch_factor": null,
+    "shuffle_train": true,
+    "drop_last_train": false
+  },
+  "backbone": {
+    "name": "TinyResNet18",
+    "feature_dim": 256,
+    "in_channels": 1,
+    "input_size_hw": [
+      64,
+      64
+    ]
+  },
+  "temporal": {
+    "use_temporal": false,
+    "lstm_input_dim": 256,
+    "lstm_hidden": 256,
+    "lstm_layers": 1,
+    "seq_window": 5,
+    "seq_stride": 3
+  },
+  "training": {
+    "epochs": 20,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "use_cosine_loss": true,
+    "patience": 7
+  },
+  "artifacts_dir": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts",
+  "logs_dir": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\logs",
+  "models_dir": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\models"
+}

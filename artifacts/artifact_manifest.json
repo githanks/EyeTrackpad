@@ -1,0 +1,9 @@
+{
+  "best_checkpoint": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\models\\best_frame.pt",
+  "best_checkpoint_copy": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\best_frame_20250902_222715.pt",
+  "train_log_csv": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\logs\\train_log_frame.csv",
+  "train_log_copy": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\train_log_frame_20250902_222715.csv",
+  "normalization_json": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\normalization.json",
+  "label_map_json": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\label_map.json",
+  "config_json": "C:\\Users\\jayfo\\OneDrive\\Desktop\\EyeTrackpad\\artifacts\\config.json"
+}
